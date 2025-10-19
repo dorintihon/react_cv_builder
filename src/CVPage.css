@@ -5,10 +5,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.cvPage{
+.genInfoSection{
     display: grid;
     gap: 20px;
     padding: 20px;
+    border-bottom: 5px solid #000000;
 }
 
 .fullName{
