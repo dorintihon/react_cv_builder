@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const newEdu = () => ({
   id: crypto?.randomUUID?.() ?? String(Date.now() + Math.random()),
@@ -36,8 +36,6 @@ function EducationExperiencePage({ formData, setFormData }) {
   return (
     <div>
       <h2>Education</h2>
-
-      {/* Add form */}
       <form onSubmit={addEducation}>
         <label>School Name</label>
         <input
