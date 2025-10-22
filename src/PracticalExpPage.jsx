@@ -35,6 +35,7 @@ function PracticalExperiencePage({ formData, setFormData }) {
         }));
         setExpInput(newExperience());
         
+        setHasExperience(null);
     };
 
     const addTask = (e) => {
@@ -55,10 +56,15 @@ function PracticalExperiencePage({ formData, setFormData }) {
     };
     const [hasExperience, setHasExperience] = useState(null);
 
+    const question =
+        practicalExperience.length > 0
+            ? "Do you want to add more experience?"
+            : "Do you have any experience?";
+
     return (
         <div>
             <h2>Practical Experience</h2>
-            <p>Do you have any experience?</p>
+            <p>{question}</p>
             <button onClick={() => setHasExperience(true)}>Yes</button>
             <button onClick={() => setHasExperience(false)}>No</button>
 

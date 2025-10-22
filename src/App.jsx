@@ -3,6 +3,7 @@ import EducationExperiencePage from './EduExpPage.jsx';
 import PracticalExperiencePage from './PracticalExpPage.jsx';
 import CVPage from './CVPage.jsx'
 import React from 'react';
+import './App.css';
 
 
 
@@ -17,11 +18,15 @@ function App() {
     });
 
     return (
-        <div>
-            <GeneralInfo formData={formData} setFormData={setFormData} />
-            <EducationExperiencePage formData={formData} setFormData={setFormData} />
-            <PracticalExperiencePage formData={formData} setFormData={setFormData} />
-            <CVPage formData={formData} />
+        <div className="appContainer">
+            <div className='inputInfo'>
+                <GeneralInfo formData={formData} setFormData={setFormData} />
+                <EducationExperiencePage formData={formData} setFormData={setFormData} />
+                <PracticalExperiencePage formData={formData} setFormData={setFormData} />
+            </div>
+            <div className='displayInfo'>
+                <CVPage formData={formData} />
+            </div>
         </div>
     );
 }

@@ -1,7 +1,12 @@
+const addInformation = (e) => {
+    e.preventDefault();
+   
+}
+
 function GeneralInfo({formData, setFormData}) {
     return <div className="generalInfo">
         <h2>General Information</h2>
-        <form action="/submit" method="POST">
+        <form onSubmit={addInformation}>
             <label htmlFor="fName">First Name</label>
             <input 
                 type="text" 
