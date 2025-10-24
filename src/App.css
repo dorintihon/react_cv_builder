@@ -1,7 +1,7 @@
 .appContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(133, 231, 255);
+    background-color: rgb(202, 244, 255);
 }
 
 .appContainer > * {
@@ -10,7 +10,7 @@
 
 .inputInfo > *{
     margin-bottom: 30px;
-    border: 2px solid #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
     background-color: #ffffff;
